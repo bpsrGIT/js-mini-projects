@@ -8,6 +8,7 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: black;
 }
 #nav {
   background-color: #464033;
@@ -250,9 +251,29 @@ html .circle {
   z-index: 100;
 }
 @keyframes scale {
-    to {
-      -webkit-transform: translate(-50%, -50%) scale(3);
-              transform: translate(-50%, -50%) scale(3);
-      opacity: 0;
-    }
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(3);
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
   }
+}
+
+// Turn Screen
+body {
+  z-index: 2;
+  transform-origin: top right;
+  transition: transform 0.5s linear;
+  .hidden-photo {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 60px;
+    right: 20px;
+    z-index: 10;
+    border: none;
+    border-radius: 50%;
+  }
+}
+body.turn-body {
+  transform: rotate(20deg);
+}

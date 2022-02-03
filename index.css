@@ -9,6 +9,7 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 #nav {
@@ -325,5 +326,31 @@ html .circle {
     transform: translate(-50%, -50%) scale(3);
     opacity: 0;
   }
+}
+
+body {
+  z-index: 2;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+body .hidden-photo {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  top: 60px;
+  right: 20px;
+  z-index: 10;
+  border: none;
+  border-radius: 50%;
+}
+
+body.turn-body {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 /*# sourceMappingURL=index.css.map */

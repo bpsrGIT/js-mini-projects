@@ -219,3 +219,15 @@ buttons.forEach(button => {
         setTimeout(() => circle.remove(), 500)
     })
 })
+
+// Turn body
+const bodyElement = document.querySelector("BODY");
+
+const hiddenPhotoButton = document.querySelector('.hidden-photo');
+hiddenPhotoButton.addEventListener('click', function (e){
+    if(bodyElement.classList.contains('turn-body') === true){
+        bodyElement.classList.remove('turn-body');
+    } else {
+        bodyElement.classList.add('turn-body');
+    }
+})
