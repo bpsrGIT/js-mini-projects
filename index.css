@@ -9,10 +9,10 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-image: url("./src/img/maxime-bui-ZZvnCHl_c6M-unsplash.jpg");
+  background-image: url("./src/img/jacalyn-beales-m1ihpPLnjdI-unsplash.jpg");
   background-repeat: no-repeat;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .title {
@@ -32,7 +32,7 @@ html {
 
 #nav {
   background-color: #464033;
-  z-index: 100;
+  z-index: 50;
   position: fixed;
   width: 100vw;
   color: #140005;
@@ -42,6 +42,25 @@ html {
 section {
   height: 100vh;
   width: 100%;
+}
+
+.box {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.box:nth-of-type(even) {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
+
+.box.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 #pwg {
@@ -319,7 +338,7 @@ html:focus {
 
 html .circle {
   position: fixed;
-  background-color: black;
+  background-color: teal;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -357,7 +376,7 @@ body {
   transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
-body .hidden-photo {
+body .hidden-cat {
   position: fixed;
   height: 30px;
   width: 30px;
@@ -366,6 +385,14 @@ body .hidden-photo {
   z-index: 10;
   border: none;
   border-radius: 50%;
+}
+
+body .card-cat {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 10;
 }
 
 body.turn-body {

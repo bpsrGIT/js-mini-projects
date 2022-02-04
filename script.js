@@ -222,6 +222,20 @@ buttons.forEach(button => {
 
 // Turn body
 const bodyElement = document.querySelector("BODY");
+const cardCatElement = document.querySelector(".card-cat");
+
+const hiddenCatCutton = document.querySelector(".hidden-cat");
+hiddenCatCutton.addEventListener('click', function(e){
+    if(cardCatElement.style.display === 'none'){
+        cardCatElement.style.display = 'block';
+    } else {
+        cardCatElement.style.display = 'none';
+    }
+    if(bodyElement.classList.contains('turn-body') === true){
+        bodyElement.classList.remove('turn-body');
+        cardCatElement.style.display = 'none';
+    }
+})
 
 const hiddenPhotoButton = document.querySelector('.hidden-photo');
 hiddenPhotoButton.addEventListener('click', function (e){
@@ -229,5 +243,26 @@ hiddenPhotoButton.addEventListener('click', function (e){
         bodyElement.classList.remove('turn-body');
     } else {
         bodyElement.classList.add('turn-body');
+        cardCatElement.style.display = 'none';
     }
 })
+
+//Scrolling effect
+const boxes = document.querySelectorAll('.box');
+
+window.addEventListener('scroll', checkBoxes);
+
+checkBoxes();
+
+function checkBoxes(){
+    const triggerBottom = window.innerHeight / 5 * 3;
+
+    boxes.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        if(boxTop < triggerBottom){
+            box.classList.add('show');
+        } else {
+            box.classList.remove('show');
+        }
+    })
+}
