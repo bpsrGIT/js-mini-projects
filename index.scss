@@ -288,7 +288,8 @@ html .circle {
 
 // Turn Screen
 body {
-  background-image: url('./src/img/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg');
+  // background-image: url('./src/img/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg');
+  background-color: #140005;
   z-index: 2;
   transform-origin: top right;
   transition: transform 0.5s linear;
@@ -312,4 +313,37 @@ body {
 }
 body.turn-body {
   transform: rotate(20deg);
+}
+
+// KeyCode
+#keycodes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .keycode-container{
+      .key{
+        border: 1px solid lightgray;
+        background-color: whitesmoke;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+        flex-direction: column;
+        margin: 1em;
+        min-width: 150px;
+        position: relative;
+        small{
+          position: absolute;
+          top: -24px;
+          left: 0;
+          text-align: center;
+          width: 100%;
+          color: #555;
+          font-size: 1rem;
+        }
+      }
+    }
 }

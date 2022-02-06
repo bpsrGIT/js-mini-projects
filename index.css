@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-image: url('./src/img/jacalyn-beales-m1ihpPLnjdI-unsplash.jpg');
+  background-image: url("./src/img/jacalyn-beales-m1ihpPLnjdI-unsplash.jpg");
   background-repeat: no-repeat;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .title {
@@ -26,7 +26,7 @@ html {
   text-justify: auto;
   text-align: center;
   -webkit-box-shadow: 1px 1px 2px darkgray, 0 0 5px gray;
-  box-shadow: 1px 1px 2px darkgray, 0 0 5px gray;
+          box-shadow: 1px 1px 2px darkgray, 0 0 5px gray;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -46,7 +46,7 @@ section {
 
 .box {
   -webkit-transform: translateX(300%);
-  transform: translateX(300%);
+          transform: translateX(300%);
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
@@ -55,12 +55,12 @@ section {
 
 .box:nth-of-type(even) {
   -webkit-transform: translateX(-300%);
-  transform: translateX(-300%);
+          transform: translateX(-300%);
 }
 
 .box.show {
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 #pwg {
@@ -69,21 +69,21 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #pwg .passwordGenerator {
   display: block;
   background-color: #bbbbbf;
   -webkit-box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
   padding: 2rem;
   width: 20rem;
   max-width: 100%;
@@ -176,14 +176,14 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #js-calculator .calculator {
@@ -231,7 +231,9 @@ section {
 #js-calculator .calculator .all-buttons {
   display: -ms-grid;
   display: grid;
-  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+  -ms-grid-columns: (1fr)[4];
+      grid-template: repeat(4, 1fr)/repeat(4, 1fr);
   background-color: #bbbbbf;
 }
 
@@ -269,14 +271,14 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #dad-jokes .joke-container {
@@ -318,8 +320,8 @@ section {
 
 #dad-jokes .joke-container .joke-box #joke-btn {
   -o-object-fit: contain;
-  object-fit: contain;
-  background-image: url('./src/img/lol.png');
+     object-fit: contain;
+  background-image: url("./src/img/lol.png");
   height: 5em;
   border: none;
   border-radius: 50px;
@@ -341,9 +343,9 @@ html .circle {
   height: 25px;
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
-  transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   -webkit-animation: scale 0.5s ease-out;
-  animation: scale 0.5s ease-out;
+          animation: scale 0.5s ease-out;
   z-index: 100;
 }
 
@@ -364,10 +366,10 @@ html .circle {
 }
 
 body {
-  background-image: url('./src/img/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg');
+  background-color: #140005;
   z-index: 2;
   -webkit-transform-origin: top right;
-  transform-origin: top right;
+          transform-origin: top right;
   -webkit-transition: -webkit-transform 0.5s linear;
   transition: -webkit-transform 0.5s linear;
   transition: transform 0.5s linear;
@@ -395,6 +397,55 @@ body .card-cat {
 
 body.turn-body {
   -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#keycodes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#keycodes .keycode-container .key {
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+  min-width: 150px;
+  position: relative;
+}
+
+#keycodes .keycode-container .key small {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #555;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
