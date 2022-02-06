@@ -4,6 +4,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -283,6 +284,7 @@ section {
 
 #dad-jokes .joke-container {
   display: block;
+  width: 80%;
 }
 
 #dad-jokes .joke-container .joke-box {
@@ -304,7 +306,7 @@ section {
   align-items: center;
   padding: 2rem;
   border-radius: 10px;
-  width: 30em;
+  width: 100%;
   height: 20em;
 }
 
@@ -447,5 +449,89 @@ body.turn-body {
   width: 100%;
   color: #555;
   font-size: 1rem;
+}
+
+@media (max-width: 599px) {
+  section {
+    width: 100vw;
+  }
+  section .title {
+    width: 90%;
+  }
+  section .keycode-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .picker-container {
+    width: 100%;
+  }
+}
+
+#random-picker {
+  font-family: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#random-picker h3 {
+  font-family: inherit;
+  color: #140005;
+  font-size: 1rem;
+}
+
+#random-picker .picker-container {
+  width: 80%;
+  background-color: lightgray;
+  padding: .5em;
+  border-radius: 10px;
+}
+
+#random-picker .picker-container textarea {
+  border: 1px solid teal;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 1em;
+  margin: 0 0 1em;
+  font-size: 1rem;
+}
+
+#random-picker .picker-container textarea:focus, #random-picker .picker-container textarea:active {
+  outline: none;
+}
+
+#random-picker .picker-container #tags .tags {
+  background-color: teal;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+#random-picker .picker-container #tags .tags.highlight {
+  background-color: limegreen;
 }
 /*# sourceMappingURL=index.css.map */
