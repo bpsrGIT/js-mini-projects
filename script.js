@@ -221,7 +221,7 @@ buttons.forEach(button => {
 })
 
 // Turn body
-const bodyElement = document.querySelector("BODY");
+/* const bodyElement = document.querySelector("BODY");
 const cardCatElement = document.querySelector(".card-cat");
 
 const hiddenCatCutton = document.querySelector(".hidden-cat");
@@ -245,7 +245,7 @@ hiddenPhotoButton.addEventListener('click', function (e){
         bodyElement.classList.add('turn-body');
         cardCatElement.style.display = 'none';
     }
-})
+}) */
 
 //Scrolling effect
 const boxes = document.querySelectorAll('.box');
